@@ -1,0 +1,15 @@
+function fibonacciSeries(n) {
+    var fibonacciSeriesArr=[];
+    
+    for(var i=0; i<n ;i++ ){
+        if (i==0 || i==1){
+        fibonacciSeriesArr.push(i);
+        }
+    
+        else{
+          
+            fibonacciSeriesArr.push(fibonacciSeriesArr[i-1]+fibonacciSeriesArr[i-2]);
+        }
+    }
+    return fibonacciSeriesArr;
+}
